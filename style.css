@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin:0;
+   
+  
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    background-color: rgb(236, 223, 236,0.2);
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    width: 800px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+    justify-content: start;
+    gap: 3rem;
+}
+
+.header{
+    background-color: #f7f7f7;
+    border-bottom: 1px soild #e2dbdb;
+    padding: 20px 40px;
+  
+}
+
+.header h2{
+    margin: 0;
+
+}
+
+.form{
+    padding: 30px 40px;
+    
+}
+.number{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    font-family: inherit;
+
+    
+}
+
+.number .num{
+    border: none;
+    outline: none;
+
+    
+}
+.number span{
+    border-right: 1px solid silver;
+    
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.form-control label, .gender, .language{
+display: inline-block;
+margin-bottom: 5px;
+color: black;
+font-weight: 500;
+}
+
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control i{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+
+}
+
+.form-control.success i.fa-check-circle{
+    visibility: visible;
+    color:#2ecc71;
+} 
+
+.form-control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color:#e74c3c;
+
+} 
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color:#e74c3c;
+
+}
+
+.form button{
+    background-color: #8e44ad;
+    border: 2px soild #8644ad;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    border-radius: 4px;
+    margin-top: 20px;
+   margin-left: -220px;
+
+}
+#getBtn{
+    display: none;
+}
+
+#editBtn{
+    display: none;
+}  
+
+#saveBtn{
+    display: none;
+}
+
+.fa-home{
+  font-size: 2rem;
+  color: rgb(241, 201, 100);
+  position: relative;
+  bottom: 260px;
+  left: 750px;
+  cursor: pointer;
+}
+
+
+    .fa-right-to-bracket{
+        font-size: 2rem;
+        color: rgb(241, 201, 100);
+        position: relative;
+        bottom: 260px;
+        left: 800px;
+        cursor: pointer;  
+    }
+
+    .radio{
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    
+
+
+    .check{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .formOne{
+        width: 50%;
+    }
+
+    .formTwo{
+       margin-top: 150px;
+       width: 50%;
+       display: flex;
+       flex-direction: column;
+       
+    }
+.code{
+    position:absolute ;
+    top: 0;
+    bottom: 30px;
+}
+    
+select{
+    width: 250px;
+    height: 30px;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+   
+  
+}
+
+.selectDiv label{
+    display: inline-block;
+    width: 100px;
+    margin: 15px;
+    
+}
+
+#proImage{
+    width: 250px;
+    height: 230px;
+    border-radius: 50px;
+
+}
